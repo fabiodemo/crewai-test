@@ -1,1 +1,16 @@
 # crewai-test
+
+## Setup the container for ollama
+`docker compose -f docker-compose-ollama.yml up -d`
+
+## Setup the container for python
+`docker compose up -d`
+
+## Install model openhermes
+`docker exec -it ollama ollama pull openhermes`
+
+## Verify if model is download succesfully
+`docker exec -it ollama ls /root/.ollama/models`
+
+## Run the main-crew script
+`docker exec -it aigen_crewai python3 main-crewai.py`
