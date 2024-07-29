@@ -23,3 +23,9 @@
 ## Run the main-crew script
 
 `docker exec -it aigen_crewai python3 main-crewai.py`
+
+
+### Credits:
+Code based on:
+    - [Deploy local LLMs like containers - OLLama Docker](https://fossengineer.com/selfhosting-llms-ollama/)
+    - [Local AI Agents with CrewAI (and Ollama)](https://fossengineer.com/ai-agents-crewai/)
