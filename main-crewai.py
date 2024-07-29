@@ -8,6 +8,8 @@ try:
                                    "prompt": "Test connection"})
     print("Connection successful:", response.json())
 
+    # os.environ["OPENAI_API_KEY"] = "Your Key"
+    #export OPENAI_API_KEY=sk-blablabla # on Linux/Mac
     ollama_model = Ollama(model="openhermes", base_url="http://ollama:11434")
 
     # Define seus agentes com funções e metas
@@ -46,7 +48,7 @@ try:
         process=Process.sequential
     )
 
-    # Coloque sua equipe para trabalhar!
+    # Coloque sua equipe para trabalhar
     result = crew.kickoff()
 
 except Exception as e:
